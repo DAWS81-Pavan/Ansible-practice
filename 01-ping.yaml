@@ -2,4 +2,4 @@
   hosts: 172.31.32.251
   tasks: 
     - name: ping the server
-      ansible.buitin.debug:
+      ansible.builtin.debug:
