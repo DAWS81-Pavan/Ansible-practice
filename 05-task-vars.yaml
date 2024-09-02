@@ -17,9 +17,13 @@
       ansible.builtin.debug:
         msg: "i am lerning course: {{COURSE}} duration is {{DURATION}} and trainer is {{TRAINER}}"
 
-    - name: print the information gain
+    - name: print the information again and again
       vars:
         COURSE: "Docker"
         DURATION: "100 hours"
+      ansible.builtin.debug:
+        msg: "i am lerning course: {{COURSE}} duration is {{DURATION}} and trainer is {{TRAINER}}"
+
+    - name: print the information again and again and again
       ansible.builtin.debug:
         msg: "i am lerning course: {{COURSE}} duration is {{DURATION}} and trainer is {{TRAINER}}"
