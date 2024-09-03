@@ -1,9 +1,9 @@
 - name: data-types concepts
   hosts: web
   vars:
-    corse: devops with aws
-    duration: 12
-    trainer: pavan reddy
+    corse: devops with aws #string
+    duration: 12 #number
+    trainer: pavan reddy #string
     topics:
     - linux
     - shell
@@ -13,12 +13,12 @@
     - k8
     live: true
     tools:
-    ci: jenkins
-    cm: ansible
-    cloud: aws
-    aws:
-    - s3
-    - ec2
+      ci: jenkins
+      cm: ansible
+      cloud: aws
+      aws:
+      - s3
+      - ec2
   tasks:
     - name: devops course information
       ansible.builtin.debug:
