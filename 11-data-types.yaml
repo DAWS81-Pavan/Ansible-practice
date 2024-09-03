@@ -17,9 +17,9 @@
       ci: jenkins
       cm: ansible
       cloud: aws
-      aws:
-      - s3
-      - ec2
+    aws:
+    - s3
+    - ec2
   tasks:
     - name: devops course information
       ansible.builtin.debug:
