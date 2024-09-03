@@ -1,3 +1,4 @@
+---
 - name: data-types concepts
   hosts: web
   vars:
