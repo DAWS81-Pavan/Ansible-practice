@@ -1,5 +1,24 @@
 - name: data types in ansible
   hosts: web
+  vars:
+    cource: DevOps with AWS
+    duration: 120+ hours
+    trainer: Pavan Reddy
+    topics:
+    - linux
+    - shell
+    - ansible
+    - terrafrom
+    - aws
+    - k8
+    live: true
+    tools:
+      ci: jenkins
+      cm: ansible
+      cloud: aws
+    aws:
+    - ec2
+    - s3
   tasks:
     - name: devops wioth aws course information
       ansible.builtin.debug:
