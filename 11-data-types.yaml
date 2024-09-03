@@ -3,7 +3,7 @@
   hosts: web
   vars:
     corse: devops with aws #string
-    duration: 12 #number
+    duration: 120+ #number
     trainer: pavan reddy #string
     topics:
     - linux
@@ -23,4 +23,4 @@
   tasks:
     - name: devops course information
       ansible.builtin.debug:
-        msg: "i am lerning course: {{corse}} duration is {{duration}} and trainer is {{trainer}}  topics are: {{topics}} live : {{live}} tools are: {{tools}}"
+        msg: "i am lerning course: {{corse}} duration is {{duration}} hours and trainer is {{trainer}}  topics are: {{topics}} live : {{live}} tools are : {{tools}} aws services is {{aws}}"
