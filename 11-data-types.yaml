@@ -22,4 +22,4 @@
   tasks:
     - name: devops with aws course information
       ansible.builtin.debug:
-        msg: "i am lerning course {{course}} duraion is {{duraion}} and trainer {{trainer}} and it's going to live {{live}} topics will cover {{topics}} and tools are {{tools}} and aws services {{aws}}"
+        msg: "i am lerning course {{course}} duraion is {{duration}} and trainer {{trainer}} and it's going to live {{live}} topics will cover {{topics}} and tools are {{tools}} and aws services {{aws}}"
