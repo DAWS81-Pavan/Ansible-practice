@@ -1,0 +1,25 @@
+- name: data-types concepts
+  hosts: web
+  vars:
+    corse: devops with aws
+    duration: 12
+    trainer: pavan reddy
+    topics:
+    - linux
+    - shell
+    - ansible
+    - terraform
+    - aws
+    - k8
+    live: true
+    tools:
+    ci: jenkins
+    cm: ansible
+    cloud: aws
+    aws:
+    - s3
+    - ec2
+  tasks:
+    - name: devops course information
+      ansible.builtin.debug:
+        msg: "i am lerning course: {{COURSE}} duration is {{DURATION}} and trainer is {{TRAINER}}  topics are: {{topics}} live : {{live}} tools are: {{tools}}""
