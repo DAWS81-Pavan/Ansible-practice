@@ -4,14 +4,14 @@
   tasks:
     - name: check the user exit or not
       ansible.builtin.command: id pavan
-      register: user
-      ignore_errors: true
+    #   register: user
+    #   ignore_errors: true
 
-    - name: check the user exit or not
-      ansible.builtin.debug: 
-        msg: "user info: {{user}}"
+    # - name: check the user exit or not
+    #   ansible.builtin.debug: 
+    #     msg: "user info: {{user}}"
 
-    - name: create user if not exit
-      ansible.builtin.command: useradd pavan
-      when: user.rc != 0
+    # - name: create user if not exit
+    #   ansible.builtin.command: useradd pavan
+    #   when: user.rc != 0
    
