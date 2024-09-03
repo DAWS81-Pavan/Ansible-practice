@@ -1,0 +1,6 @@
+- name: create user
+  hosts: web
+  tasks:
+    - name: check the user exit or not
+      ansible.builtin.command: id pavan
+      # rigster: user
