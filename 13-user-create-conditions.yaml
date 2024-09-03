@@ -3,7 +3,7 @@
   tasks:
     - name: check the user exit or not
       ansible.builtin.command: id pavan
-      rigster: user
+      register: user
       ignore_errors: true
 
     - name: check the user exit or not
