@@ -1,26 +1,6 @@
----
-- name: data-types concepts
+- name: data types in ansible
   hosts: web
-  vars:
-    corse: devops with aws #string
-    duration: 120+ #number
-    trainer: pavan reddy #string
-    topics:
-    - linux
-    - shell
-    - ansible
-    - terraform
-    - aws
-    - k8
-    live: true
-    tools:
-      ci: jenkins
-      cm: ansible
-      cloud: aws
-    aws:
-    - s3
-    - ec2
   tasks:
-    - name: devops course information
+    - name: devops wioth aws course information
       ansible.builtin.debug:
-        msg: "i am lerning course: {{corse}} duration is {{duration}} hours and trainer is {{trainer}}  topics are: {{topics}} live : {{live}} tools are : {{tools}} aws services is {{aws}}"
+        msg: "i am lerning course {{course}} duraion is {{duraion}} and trainer {{trainer}} and it's going to live {{live}} topics will cover {{topics}} and tools are {{tools}} and aws services {{aws}}"
