@@ -1,17 +1,16 @@
 - name: create user
   hosts: web
-  become: yes
   tasks:
     - name: check the user exit or not
-      ansible.builtin.command: id pavan
+      ansible.builtin.command: id babu
       register: user
       ignore_errors: true
 
-    - name: check the user exit or not
-      ansible.builtin.debug: 
-        msg: "user info: {{user}}"
+
+    - name: print the user information
+      ansible.builtin.debug:
+        msg: "user info {{user}}"
 
     - name: create user if not exit
-      ansible.builtin.command: useradd pavan
+      ansible.builtin.command: useradd babu
       when: user.rc != 0
-   
