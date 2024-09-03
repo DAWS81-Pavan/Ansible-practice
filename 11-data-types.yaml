@@ -23,4 +23,4 @@
   tasks:
     - name: devops course information
       ansible.builtin.debug:
-        msg: "i am lerning course: {{COURSE}} duration is {{DURATION}} and trainer is {{TRAINER}}  topics are: {{topics}} live : {{live}} tools are: {{tools}}"
+        msg: "i am lerning course: {{corse}} duration is {{duration}} and trainer is {{trainer}}  topics are: {{topics}} live : {{live}} tools are: {{tools}}"
