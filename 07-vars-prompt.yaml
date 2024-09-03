@@ -7,7 +7,7 @@
     prompt: please enter the course
     private: false
   - name: DURATION
-    prompt: please enter the course
+    prompt: please enter the duration
     private: false
   - name: TRAINER
     prompt: please enter the TRAINER
