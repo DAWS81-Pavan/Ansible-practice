@@ -1,7 +1,7 @@
-- name: print names
+- name: loops demo
   hosts: web
   tasks:
-    - name: loops demo
+    - name: print names
       ansible.builtin.debug:
         msg: " Hello {{ item }}"
       loop:
