@@ -1,7 +1,7 @@
 - name: install nginx
   hosts: web
-  become: yes
+  # become: yes
   tasks:
     - name: print the stats
-      ansible.builtin.bebug:
+      ansible.builtin.debug:
         msg: "{{ansible_facts}}"
