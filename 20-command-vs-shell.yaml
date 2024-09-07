@@ -2,4 +2,4 @@
   hosts: web
   tasks:
     -  name: execute the commamnd
-       ansible.builtin.command: ls -lt
+       ansible.builtin.command: ls -lt > /tmp/output.txt
