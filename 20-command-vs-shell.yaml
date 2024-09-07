@@ -3,6 +3,7 @@
   tasks:
     -  name: execute the commamnd
        ansible.builtin.command: ls -lt > /tmp/output.txt
+       ignore_errors: true
 
     -  name: execute the commamnd
        ansible.builtin.shell: ls -lt > /tmp/output.txt
