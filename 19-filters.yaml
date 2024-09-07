@@ -3,4 +3,4 @@
   tasks:
     - name: print the default variable
       ansible.builtin.debug:
-        msg: "{{ course | defult (ansible)}}"
+        msg: Hello "{{ course | defult (ansible)}}"
