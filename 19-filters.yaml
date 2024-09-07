@@ -9,5 +9,5 @@
       ansible.builtin.debug:
       vars: 
         name: pavan
-        msg: "Hello {{ name | upper }}"
+        msg: "{{ name | upper }}"
 
