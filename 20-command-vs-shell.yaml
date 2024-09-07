@@ -1,0 +1,5 @@
+- name: command vs shell
+  hosts: web
+  tasks:
+    -  name: execute the commamnd
+       ansible.builtin.command: ls -lt
