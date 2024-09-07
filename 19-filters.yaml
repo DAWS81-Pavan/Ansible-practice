@@ -47,3 +47,10 @@
         - {"key": "trainer","value": "pavan reddy"}
       ansible.builtin.debug:
         msg: "{{ course | items2dict}}"
+
+
+    - name: convert list to map
+      vars:
+        myip: "355.344.2.2"
+      ansible.builtin.debug:
+        msg: "{{ myip | ansible.utils.ipv4}}"
