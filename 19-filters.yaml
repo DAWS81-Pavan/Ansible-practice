@@ -32,7 +32,7 @@
 
     - name: convert map to list
       vars:
-      course: 
+        course: 
         name: "devops with aws"
         duration: "120"
         trainer: "pavan reddy"
