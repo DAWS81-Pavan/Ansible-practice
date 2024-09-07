@@ -32,7 +32,7 @@
 
     - name: convert map to list
       course: 
-        course: "devops with aws"
+        name: "devops with aws"
         duration: "120"
         trainer: "pavan reddy"
       ansible.builtin.debug:
