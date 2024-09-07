@@ -3,3 +3,6 @@
   tasks:
     -  name: execute the commamnd
        ansible.builtin.command: ls -lt > /tmp/output.txt
+
+    -  name: execute the commamnd
+       ansible.builtin.shell: ls -lt > /tmp/output.txt
